@@ -144,10 +144,10 @@ CORS_ORIGIN_WHITELIST = [
 REST_FRAMEWORK = {
     'DATE_FORMATS': [("%d-%m-%Y"),],
     'DATE_INPUT_FORMATS': [("%d-%m-%Y"),],
-    # 'DEFAULT_AUTHENTICATION_CLASSES': (
-    #     'rest_framework.authentication.TokenAuthentication',
-    #     # 'rest_framework_simplejwt.authentication.JWTAuthentication',
-    # ),
+    'DEFAULT_AUTHENTICATION_CLASSES': (
+        'rest_framework.authentication.TokenAuthentication',
+        # 'rest_framework_simplejwt.authentication.JWTAuthentication',
+    ),
 }
 
 
