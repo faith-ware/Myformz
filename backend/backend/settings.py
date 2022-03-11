@@ -45,6 +45,7 @@ INSTALLED_APPS = [
     'rest_framework.authtoken',
     'rest_framework_simplejwt',
     'djoser',
+    'form'
 ]
 
 MIDDLEWARE = [
@@ -145,6 +146,7 @@ REST_FRAMEWORK = {
     'DATE_FORMATS': [("%d-%m-%Y"),],
     'DATE_INPUT_FORMATS': [("%d-%m-%Y"),],
     'DEFAULT_AUTHENTICATION_CLASSES': (
+        'rest_framework.authentication.BasicAuthentication',
         'rest_framework.authentication.TokenAuthentication',
         # 'rest_framework_simplejwt.authentication.JWTAuthentication',
     ),
